@@ -1,0 +1,43 @@
+.header {
+    background-color: #20466D;
+}
+
+.title {
+    text-decoration: none;
+}
+
+h6 {
+    color: #fff;
+}
+
+.search {
+    border-radius: 100px;
+}
+
+.btn {
+    background-color: #eee;
+}
+
+.navbar {
+    background-color: #4A90D7;
+}
+
+#sosmed {
+    background-color: #20466D;
+}
+
+#dropdown {
+    justify-content: space-between;
+}
+
+#login {
+    background-color: #eee;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+}

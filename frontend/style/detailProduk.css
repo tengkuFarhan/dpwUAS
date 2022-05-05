@@ -1,0 +1,37 @@
+.header {
+    background-color: #20466D;
+}
+
+.title {
+    text-decoration: none;
+}
+
+h6 {
+    color: #fff;
+}
+
+.search {
+    border-radius: 100px;
+}
+
+.btn {
+    background-color: #eee;
+}
+
+.navbar {
+    background-color: #4A90D7;
+}
+
+#sosmed {
+    background-color: #20466D;
+}
+
+#beli {
+    
+    background-color: #20466D;
+    padding-inline: 50px;
+}
+
+#login {
+    background-color: #eee;
+}
