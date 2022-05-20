@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Produk - Gadget4Us</title>
+    <title>Pembayaran - Gadget4Us</title>
 
     <!-- Import Font -->
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 
     <!-- Import CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="frontend/style/detailProduk.css">
+    <link rel="stylesheet" href="frontend/style/pembayaran.css">
 </head>
 <body>
 
@@ -74,91 +74,112 @@
         </div>
     </div>
 
-   <!-- Pilihan Variasi -->
+   <!-- Identitas Barang -->
     <div class="container py-5">
         <div class="row d-flex">
-            <div class="col col-4">
-                <img src="frontend/images/redminote10.png" alt="redminote10" class="img-fluid">
-            </div>
             <div class="col-8">
                 <p class="fw-bolder fs-4">XIAOMI REDMI NOTE 10 RAM 4GB ROM 16/32/64GB</p>
                 <p class="fw-bolder fs-4 mt-3">Rp. 1.600.000</p>
+                <p>RAM : 4 GB <br> RESOLUSI KAMERA : 12 MP <br> UKURAN LAYAR : 6.52 INCH <br> BATERAI : 5000 MAH</p>
                 
-                <div class="form-check mt-5">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        12GB
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        32GB
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        64GB
-                    </label>
-                </div>
-                <div class="button d-flex justify-content-end mt-3">
-                    <a class="btn btn-primary " id="beli" href="pembayaran.html" role="button">Beli</a>
-                </div>
             </div>
+                <div class="col col-4">
+                <img src="frontend/images/redminote10.png" alt="redminote10" class="img-fluid" width="60%">
+                </div>
+            
         </div>
     </div>
 
-    <!-- Tabel Spesifikasi -->
-    <div class="container">
+    <!-- Jumlah -->
+    <div class="container my-5">
         <div class="row">
-            <div class="col">
-                <p class="fw-bolder fs-4">DETAIL SPESIFIKASI</p>
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-4">JUMLAH</p>
+                
             </div>
         </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="btn-group">
+                <a href="#" class="btn fw-bolder" id="jumlah">-</a>
+                <a href="#" class="btn fw-bolder" id="jumlah">1</a>
+                <a href="#" class="btn fw-bolder" id="jumlah">+</a>
+              </div>
+        </div>
+    </div>
+
+    <!-- Total -->
+    <div class="container my-5">
         <div class="row">
-            <table class="table table-bordered">
-                <tr>
-                    <th>NAMA PRODUK</th>
-                    <td>XIAOMI REDMI NOTE 10</td>
-                </tr>
-                <tr>
-                    <th>JARINGAN</th>
-                    <td>2G, 3G, 4G</td>
-                </tr>
-                <tr>
-                    <th>BERAT</th>
-                    <td>181 GRAM</td>
-                </tr>
-                <tr>
-                    <th>LAYAR</th>
-                    <td>6.5 INCH</td>
-                </tr>
-                <tr>
-                    <th>KAMERA</th>
-                    <td>50MP</td>
-                </tr>
-                <tr>
-                    <th>WARNA</th>
-                    <td>PUTIH, ABU-ABU, BIRU</td>
-                </tr>
-                <tr>
-                    <th>DETAIL PROSESOR</th>
-                    <td>HELIO G88</td>
-                </tr>
-                <tr>
-                    <th>OS VERSION</th>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <th>DIMENSI</th>
-                    <td>162 X 75.5 X 8.9 MM</td>
-                </tr>
-                <tr>
-                    <th>KAPASITAS BATERAI</th>
-                    <td>5000 MAH</td>
-                </tr>
-            </table>
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-4">TOTAL</p>
+            </div>
+        </div>
+        <div class="row" id="total">
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-5">Rp. 1.600.000,00</p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Metode Pembayaran -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-4">METODE PEMBAYARAN</p>
+            </div>
+        </div>
+        <div class="row" id="total">
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1"><img src="frontend/images/cod.png" alt=""></label>
+            </div>      
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2"><img src="frontend/images/indomaret.png" alt=""></label> 
+            </div>      
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3"><img src="frontend/images/sicepat.png" alt=""></label>
+            </div>      
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                     <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio4"><img src="frontend/images/tiki.png" alt=""></label>  
+            </div>      
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio5"><img src="frontend/images/jne.png" alt=""></label>  
+            </div>      
+            <div class="col my-2 d-flex justify-content-center col-md-4 col-sm-6">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio6"><img src="frontend/images/j&t.png"  alt=""></label>  
+            </div>          
+        </div>
+    </div>
+
+    <!-- Total Pembayaran -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-4">TOTAL PEMBAYARAN</p>
+            </div>
+        </div>
+        <div class="row" id="total">
+            <div class="col d-flex justify-content-center">
+                <p class="fw-bolder fs-5">Rp. 1.600.000,00</p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="container my-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col d-flex">
+                <a href="detailProduk.html" class="btn" id="tombol">Kembali</a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a href="alamatPengiriman.html" class="btn" id="tombol">Selanjutnya</a>
+            </div>
         </div>
     </div>
 

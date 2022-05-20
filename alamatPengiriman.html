@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Produk - Gadget4Us</title>
+    <title>Pembayaran - Gadget4Us</title>
 
     <!-- Import Font -->
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 
     <!-- Import CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="frontend/style/detailProduk.css">
+    <link rel="stylesheet" href="frontend/style/alamatPengiriman.css">
 </head>
 <body>
 
@@ -74,91 +74,52 @@
         </div>
     </div>
 
-   <!-- Pilihan Variasi -->
+   <!-- Alamat Pengiriman -->
     <div class="container py-5">
         <div class="row d-flex">
-            <div class="col col-4">
-                <img src="frontend/images/redminote10.png" alt="redminote10" class="img-fluid">
-            </div>
-            <div class="col-8">
-                <p class="fw-bolder fs-4">XIAOMI REDMI NOTE 10 RAM 4GB ROM 16/32/64GB</p>
-                <p class="fw-bolder fs-4 mt-3">Rp. 1.600.000</p>
-                
-                <div class="form-check mt-5">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        12GB
-                    </label>
+                <div class="col align-self-center">
+                    <div class="card border border-primary">
+                        <div class="card-header text-center bg-primary text-white">
+                           <h4>Alamat Pengiriman</h4> 
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="jalan" class="form-label">Alamat Lengkap</label>
+                                    <input type="text" class="form-control" id="jalan" placeholder="ex : Jalan Sentosa....">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="kecamatan" class="form-label">Kecamatan</label>
+                                    <input type="text" class="form-control" id="kecamatan" placeholder="ex : Rukun">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="kota" class="form-label">Kota/Kabupaten</label>
+                                    <input type="text" class="form-control" id="kota" placeholder="ex : Jakarta Pusat">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama Penerima</label>
+                                    <input type="text" class="form-control" id="nama" placeholder="ex : Farhan">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="hp" class="form-label">No. HP Penerima</label>
+                                    <input type="text" class="form-control" id="hp" placeholder="ex : 08xxxxxxxxxx">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Penerima</label>
+                                    <input type="email" class="form-control" id="email" placeholder="ex : farhan@gmail.com">
+                                </div>
+                            </form>
+                            <div class="d-flex justify-content-between">
+                                <div class="col d-flex">
+                                    <a href="pembayaran.html" class="btn btn-primary" id="tombol">Kembali</a>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <a href="#" class="btn btn-primary" id="tombol">Selanjutnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        32GB
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        64GB
-                    </label>
-                </div>
-                <div class="button d-flex justify-content-end mt-3">
-                    <a class="btn btn-primary " id="beli" href="pembayaran.html" role="button">Beli</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tabel Spesifikasi -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p class="fw-bolder fs-4">DETAIL SPESIFIKASI</p>
-            </div>
-        </div>
-        <div class="row">
-            <table class="table table-bordered">
-                <tr>
-                    <th>NAMA PRODUK</th>
-                    <td>XIAOMI REDMI NOTE 10</td>
-                </tr>
-                <tr>
-                    <th>JARINGAN</th>
-                    <td>2G, 3G, 4G</td>
-                </tr>
-                <tr>
-                    <th>BERAT</th>
-                    <td>181 GRAM</td>
-                </tr>
-                <tr>
-                    <th>LAYAR</th>
-                    <td>6.5 INCH</td>
-                </tr>
-                <tr>
-                    <th>KAMERA</th>
-                    <td>50MP</td>
-                </tr>
-                <tr>
-                    <th>WARNA</th>
-                    <td>PUTIH, ABU-ABU, BIRU</td>
-                </tr>
-                <tr>
-                    <th>DETAIL PROSESOR</th>
-                    <td>HELIO G88</td>
-                </tr>
-                <tr>
-                    <th>OS VERSION</th>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <th>DIMENSI</th>
-                    <td>162 X 75.5 X 8.9 MM</td>
-                </tr>
-                <tr>
-                    <th>KAPASITAS BATERAI</th>
-                    <td>5000 MAH</td>
-                </tr>
-            </table>
         </div>
     </div>
 

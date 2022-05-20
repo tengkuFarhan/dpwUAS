@@ -1,0 +1,44 @@
+.header {
+    background-color: #20466D;
+}
+
+.title {
+    text-decoration: none;
+}
+
+h6 {
+    color: #fff;
+}
+
+.search {
+    border-radius: 100px;
+}
+
+.btn {
+    background-color: #eee;
+}
+
+.navbar {
+    background-color: #4A90D7;
+}
+
+#sosmed {
+    background-color: #20466D;
+}
+
+#login {
+    background-color: #eee;
+}
+
+#jumlah {
+    background-color: gray;
+}
+
+#total {
+    background-color: gray;
+}
+
+#tombol {
+    color: white    ;
+    background-color: #0d6efd;
+}
